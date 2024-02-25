@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #00ff46;
+opacity: 1;
+background-size: 32px 32px;
+background-image: repeating-linear-gradient(45deg, #000000 0, #000000 3.2px, #00ff46 0, #00ff46 50%);
+display: flex;
+justify-content: center;
+text-align: center;
+align-content: center;
+flex-flow: column;
+
+}
+
+
+
+.grid{
+    margin-top: 20%;
+    border: 2px solid black;
+    height: auto;
+    width: 90%;
+    padding: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5%;
+    background-color: black;
+}
+
+button{
+    background-color: black;
+    color: #00ff46;
+    font-size: 2em;
+    border:2px solid #00ff46;
+    font-weight: bolder;
+    box-shadow: 0 0 14px black;
+}
+.grid div{
+  
+    height: 40px;
+    width: 11%;
+    border: 1px solid whitesmoke;
+    
+}
+.ending {
+    background-color:whitesmoke ;
+
+}
+.starting-block{
+    background-color: royalblue;
+
+}
+
+.cars-left,.cars-right{
+    background-color: #cccccc;
+}
+
+
+
+.l1, .l2,.l3{
+    background-color: brown;
+}
+
+.l4,.l5{
+    background-color: blue;
+}
+
+.p4{
+    background-color: yellow;
+}
+
+.frog{
+    background-color: green;
+}
+
+.progressbar {
+    width: 80%;
+    margin: 25px auto;
+    background-color: #000000;
+    border: 4px solid black;
+    box-shadow: 0 0 20px black;
+   
+  }
+  .progressbar .inner {
+    height: 15px;
+    animation: progressbar-countdown;
+    /* Placeholder, this will be updated using javascript */
+    animation-duration: 40s;
+    /* We stop in the end */
+    animation-iteration-count: 1;
+    /* Stay on pause when the animation is finished finished */
+    animation-fill-mode: forwards;
+    /* We start paused, we start the animation using javascript */
+    animation-play-state: paused;
+    /* We want a linear animation, ease-out is standard */
+    animation-timing-function: linear;
+  }
+  h1{
+    background-color: black;
+    width: 20%;
+    margin-left: 40%;
+    border: 1px solid #00ff46;
+    color: #00ff46;
+    box-shadow: 0 0 14px black;
+  }
+  @keyframes progressbar-countdown {
+    0% {
+      width: 100%;
+      background:#00ff46;
+    }
+    100% {
+      width: 0%;
+      background: #00ff46;
+    }
+  }
+/*for full hd
+@media screen and (min-width:900px) {
+    .grid{
+        
+        height: 600px;
+        border: 4px solid black;
+        margin-top: 12%;
+        background-color: hsla(0, 0%, 0%, 0.735);
+        left: 10%;
+       
+       
+    }
+   
+   
+    
+}*/
+
+@media screen and (min-width:1700px) {
+    .grid div{
+  
+        height: 80px;
+        width: 11%;
+        border: 2px solid whitesmoke;
+    }
+    .grid{
+        margin-top:1% ;
+    }
+    .progressbar {
+        width: 90%;
+        margin: 25px auto;
+        
+      }
+      button{
+        margin-top: 1%;
+      }
+   
+    
+}
+
+
+
+

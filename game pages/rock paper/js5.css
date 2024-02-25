@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #00bcff;
+    opacity: 1;
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #00bcff 29px ), repeating-linear-gradient( #00000055, #000000 );
+min-height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+
+.container{
+    border: 2px solid black;
+    width: 70%;
+    height: auto;
+    padding: 5%;
+    background-color: hsla(214, 75%, 14%, 0.335);
+    color:#00A97F;
+    border-radius: 30px;
+    box-shadow: 0 0 6px black;
+}
+
+
+
+#Rock{
+    margin-right: 4%;
+}
+#Scissor{
+    margin-left: 4%;
+}
+button {
+    --color: #00A97F;
+    --color2: rgb(10, 25, 30);
+    padding: 0.8em 1.75em;
+    background-color: transparent;
+    border-radius: 6px;
+    border: .3px solid var(--color);
+    transition: .5s;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+    font-weight: 300;
+    flex-wrap: nowrap;
+    font-family: 'Roboto', 'Segoe UI', sans-serif;
+    text-transform: uppercase;
+    color: var(--color);
+    margin-top: 10%;
+    font-size: 1.4em;
+    text-wrap: nowrap;
+
+   }
+   
+   button::after, button::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    transform: skew(90deg) translate(-50%, -50%);
+    position: absolute;
+    inset: 50%;
+    left: 25%;
+    z-index: -1;
+    transition: .5s ease-out;
+    background-color: var(--color);
+   }
+   
+   button::before {
+    top: -50%;
+    left: -25%;
+    transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+   }
+   
+   button:hover::before {
+    transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+   }
+   
+   button:hover::after {
+    transform: skew(45deg) translate(-50%, -50%);
+   }
+   
+   button:hover {
+    color: var(--color2);
+   }
+   
+   button:active {
+    filter: brightness(.7);
+    transform: scale(.98);
+   }

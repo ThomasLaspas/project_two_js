@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background-color: #bf00ff;
+    opacity: 1;
+    background-image: radial-gradient(circle at center center, #000000, #bf00ff), repeating-radial-gradient(circle at center center, #000000, #000000, 36px, transparent 72px, transparent 36px);
+    background-blend-mode: multiply;
+    filter: brightness(3);
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#last{
+    display: none;
+}
+.grid{
+    width: 80%;
+    border: 3px solid whitesmoke;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0 0 25px whitesmoke;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.521);
+    margin-bottom: 5%;
+
+}
+h3{
+    color: whitesmoke;
+    margin-bottom: 4%;
+}
+
+.grid div{
+    width: 14.28%;
+    border: 1px solid whitesmoke;
+    height: 50px;
+
+}
+
+.player-two{
+    background-color: green;
+    border-radius: 50%;
+}
+.player-one{
+    background-color: red;
+    border-radius: 50%;
+}
+
+
+
+@media screen and (min-width:1700px) {
+    .grid div{
+        height: 90px;
+    }
+    
+}
